@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105%;
+    background-image: url("https://images.unsplash.com/photo-1605003179269-c446bb939f00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGlua3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: 100%;
+    margin-top: 7.5%;
+    scale: 1.25;
+    
+
+}
+.wrapper {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin: 0;
+}
+.left-container {
+    margin-right: 5vh;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.left-container:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+.right-container {
+    margin-left: 5vh;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.right-container:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+.wrapper  div {
+    display: inline-block;
+    width: 20rem;
+    height: 25rem;
+    
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.wrapper div .city-name {
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+    z-index: 100;
+    text-align: center;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.25rem;
+    width: 18rem;
+    height: 2rem;
+    
+    box-sizing: border-box;
+
+}
+.wrapper div .main-content .weather {
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+    font-size: 1.3rem;
+    height: 10rem;
+    width: 15rem;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    margin-top: 2rem;
+    
+}
+.wrapper div .main-content .weather .icon {
+    vertical-align: top;
+    height: 4rem;
+    width: 4rem;
+    padding: 0.25rem;
+    margin: 0.1rem;
+}
+.wrapper div .main-content .weather .temp {
+    justify-content:  center;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 1.1rem;
+    vertical-align: top;
+    height: 4rem;
+    width: 4rem;
+    margin: 0.1rem;
+}
+.wrapper div .main-content .weather .info {
+    vertical-align: top;
+    height: 4rem;
+    width: 8.25rem;
+    
+    
+}
+
+
+.wrapper div .main-content {
+    
+    width: 18em;
+    height: 20rem;
+}
+.wrapper div #left-screen {
+    background-image: url("https://images.unsplash.com/photo-1636903364559-0dfc358abd94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+    filter: grayscale(20%);
+}
+.wrapper div #right-screen { 
+    background-image: url("https://images.unsplash.com/photo-1576660016182-af8a90e6ffda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=818&q=80");
+    filter: grayscale(20%);
+
+}
+.wrapper div .screen {
+    
+    position: relative;
+    z-index: -2;
+    animation: pan-image 15s linear infinite;
+    height: 100%;
+    width: 100%;
+    background-size: 350%;
+    background-position: center;
+    
+
+}
+.wrapper div .main-content .weather .icon img {
+    width: 105%;
+    height: 105%;
+}
+@keyframes pan-image {
+    0% {
+        background-position: 36% 42%;
+        background-size: 200%;
+    }
+    20% {
+        background-position: 30% 35%;
+        background-size: 200%;
+    }
+    20.0001% {
+        background-position: 60% 85%;
+        background-size: 500%;
+    }
+    40% {
+        background-position: 49% 82%;
+        background-size: 500%;
+    }
+    40.0001% {
+        background-position: 80% 42%;
+        background-size: 300%;
+    }
+    60% {
+        background-position: 84% 33%;
+        background-size: 300%;
+    }
+    60.001% {
+        background-position: 0% 0%;
+        background-size: 300%;
+    }
+    80% {
+        background-position: 15% 4%;
+        background-size: 300%;
+    }
+    80.0001% {
+        background-position: 56% 22%;
+        background-size: 250%;
+    }
+    100% {
+        background-position: 36% 12%;
+        background-size: 250%;
+    }
+
+}
